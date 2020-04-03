@@ -1,0 +1,8 @@
+.link-primary {
+  color: whitesmoke;
+  font-family: $font-primary;
+  &:hover {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+}
