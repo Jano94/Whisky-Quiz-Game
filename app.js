@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import ReactDOM from "react-dom";
-import LoadingPage from "./Loading_Page/loading_page";
+import LoadingPage from "./js/Loading_Page/loading_page";
 import { HashRouter, Switch, Route} from "react-router-dom";
-import QuizWelcomeMenu from "./Quiz-menu/quiz_welcome_menu";
-import QuizMenu from "./Quiz-menu/quiz_menu";
-import QuizGame from "./Whisky-Game/quiz_game";
-import questArray1 from "./Questions_Arrays/questionArrays1";
-import questArray2 from "./Questions_Arrays/questionArrays2";
-import questArray3 from "./Questions_Arrays/questionArrays3";
-import "../scss/main.scss"
+import QuizWelcomeMenu from "./js/Quiz-menu/quiz_welcome_menu";
+import QuizMenu from "./js/Quiz-menu/quiz_menu";
+import QuizGame from "./js/Whisky-Game/quiz_game";
+import questArray1 from "./js/Questions_Arrays/questionArrays1";
+import questArray2 from "./js/Questions_Arrays/questionArrays2";
+import questArray3 from "./js/Questions_Arrays/questionArrays3";
+import "./scss/main.scss"
 
 const App = () => {
     const [score, setScore] = useState([]);

@@ -3,16 +3,16 @@ const autoprefixer = require('autoprefixer');
 const Html = require('html-webpack-plugin');
 const MiniCSS = require("mini-css-extract-plugin");
 
-const entryPath = "WhiskyQuiz";
+// const entryPath = "Whisky-Quiz-Game — kopia";
 
 module.exports = {
-  entry: ["whatwg-fetch", `./${entryPath}/js/app.js`],
+  entry: ["whatwg-fetch", `./app.js`],
   output: {
     filename: "out.js",
-    path: path.resolve(__dirname, `${entryPath}/build`)
+    path: path.resolve(__dirname, `./build`) //entry
   },
   devServer: {
-    contentBase: path.join(__dirname, `${entryPath}`),
+    contentBase: path.join(__dirname), //entry
     publicPath: "/build/",
     compress: true,
     port: 3001
@@ -66,10 +66,10 @@ module.exports = {
   plugins: [
     new Html({
       filename: "index.html",
-      template: `./${entryPath}/index.html`
+      template: `./index.html`
     }),
     new MiniCSS({
-      filename: `./${entryPath}/style.css`,
+      filename: `./style.css`,
     })
   ]
 };
