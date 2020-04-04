@@ -24,9 +24,9 @@ const questArray3 = [
         questionID: 16
     },
     {
-        question: "How do you like the Coders Lab course?",
-        answers: ["It was fuck*** great" , "Awesome" , "It was like the most delicious whisky in the world" , "I`d love it <3" , "All options"],
-        correct: "All options",
+        question: "How many Speyside distilleries are there??",
+        answers: ["23" , "32" , "More than 40" , "More than 50"],
+        correct: "More than 50",
         questionID: 17
     },
 ];

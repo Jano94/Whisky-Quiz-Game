@@ -19,8 +19,8 @@ const questArray1= [
     },
     {
         question: "4. How many ages, scotch whisky have to spend in barrels?",
-        answers: ["Is good after production" , "only year" , "two years", "three years"],
-        correct: "two years",
+        answers: ["Is good after production" , "Only year" , "Two years", "Three years"],
+        correct: "Three years",
         questionID: 4
     },
     {
