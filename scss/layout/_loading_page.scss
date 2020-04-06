@@ -26,22 +26,23 @@
 
 
     & .progress-bar {
-        background-color: rgba(140,45,11, 1);
+        background-color: $mexican-red;
       }
     }
 
   & .progress-text {
       font-size: $font-size;
-      color: #070E26;
+      color: $darken-blue;
     font-family: $font-primary;
     }
   }
 
 .text {
     font-family: $font-primary;
+
   }
 
 .text-color {
-    color: whitesmoke;
+    color: $white;
   }
 

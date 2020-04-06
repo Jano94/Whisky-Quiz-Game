@@ -33,8 +33,10 @@
     "since 2015"
   ],
   "dependencies": {
+    "i18next": "^19.3.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-i18next": "^9.0.10",
     "react-router-dom": "^5.1.2",
     "whatwg-fetch": "^3.0.0"
   }

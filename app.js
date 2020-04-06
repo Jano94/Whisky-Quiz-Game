@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import ReactDOM from "react-dom";
-import LoadingPage from "./js/Loading_Page/loading_page";
 import { HashRouter, Switch, Route} from "react-router-dom";
+import LoadingPage from "./js/Loading_Page/loading_page";
 import QuizWelcomeMenu from "./js/Quiz-menu/quiz_welcome_menu";
 import QuizMenu from "./js/Quiz-menu/quiz_menu";
 import QuizGame from "./js/Whisky-Game/quiz_game";
@@ -15,6 +15,7 @@ const App = () => {
     const [level, setLevel] = useState(0);
     return (
         <>
+            return <h1>{t('Welcome to React')}</h1>
         <HashRouter>
             <Switch>
         <Route exact={true} path ="/" component={LoadingPage}/>

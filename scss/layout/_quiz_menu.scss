@@ -1,23 +1,23 @@
 .quiz-menu {
-  width: 100%;
+  width: $width-page;
   height: 100vh;
   background-image: url("./../images/whisky_background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   & .quiz-header {
-    width: 100%;
+    width: $width-page;
     height: 20%;
     padding: 8rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color: whitesmoke;
+    color: $white;
     & .quiz-title {
-      font-family: 'Chau Philomene One', sans-serif;
+      font-family: $font-primary;
      font-size: 3.2rem;
-      background: rgba(0, 0, 0, 0.7);;
-      border-radius: 5px;
-      color: whitesmoke;
+      background: $black;;
+      border-radius: $border-radius;
+      color: $white;
       padding: 20px;
    }
   }

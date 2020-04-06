@@ -1,14 +1,14 @@
 .columns-background {
-  background: rgba(0, 0, 0, 0.7);;
-  border-radius: 5px;
-  color: whitesmoke;
+  background: $black;;
+  border-radius: $border-radius;
+  color: $white;
   height: 200px;
 }
 
 .columns-text {
   font-size: 2.25rem;
-  font-family: 'Chau Philomene One', sans-serif;
+  font-family: $font-primary;
   padding: 20px 20px;
-  color: whitesmoke;
+  color: $white;
   opacity: 1;
 }
