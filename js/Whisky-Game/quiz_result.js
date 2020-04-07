@@ -6,14 +6,14 @@ const QuizResult= ({score, playAgainFn, responses, showButton, showWinnerButton 
     const nextGame = (
         score.length >= 3 && showButton
             ? <button className="button-third">
-                <Link className="link-primary" to={"/quiz/menu"}> Slainte! You unblock a new game </Link>
+                <Link className="link-primary" to={"/quiz/menu"}> Slainte! You unlock a new game </Link>
         </button>
             : null
     );
     const winnerButton = (
       showWinnerButton === true && score.length >=3
       ?   <button className="button-third">
-              <Link className="link-primary" to={"/quiz/menu"}> You are master of the disaster ! You rock with whisky ! :D
+              <Link className="link-primary" to={"/quiz/menu"}> You are a master of the disaster! You rock with whisky! :D
               </Link></button>
     :null
     );
