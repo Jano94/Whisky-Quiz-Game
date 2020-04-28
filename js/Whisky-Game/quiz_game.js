@@ -12,7 +12,7 @@ class QuizGame extends Component {
         this.setState({
             responses: this.state.responses < 5 ? this.state.responses + 1 : 5
         });
-        if (answer === correctAnswer /*&& this.state.questionID === this.state.responses.length*/) {
+        if (answer === correctAnswer ) {
             this.props.setScore(prev => {
                 return [...prev, questionID];
             });
@@ -26,8 +26,6 @@ class QuizGame extends Component {
         this.setState({
             responses: 0
         });
-
-
         this.props.setScore(() => []);
     };
 
@@ -50,7 +48,7 @@ class QuizGame extends Component {
             <>
                 <section className="menu-main">
                     <div className="container quiz-box">
-                <h1 className="title"> {this.props.title}</h1>
+                <h1 className="title-game"> {this.props.title}</h1>
                 {this.state.questionArray.length > 0 &&
                 this.state.responses < 5 &&
                 this.state.questionArray.

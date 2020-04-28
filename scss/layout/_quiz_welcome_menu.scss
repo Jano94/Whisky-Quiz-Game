@@ -1,19 +1,58 @@
 .menu-main {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 13rem;
   width: 100%;
-  height: 100vh;
-  background-image: url("./../images/whisky_background2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
   & .menu-section {
     border-radius: $border-radius;
     text-align: center;
     padding: 2rem;
     background: $black;
     color: $white;
+    .title-primary {
+      font-family: $font-primary;
+    }
+    .title-secondary {
+      font-family: $font-primary;
+      margin-bottom: $spacing-main*2;
+    }
+    .text {
+      font-size: $font-size;
+    }
+    .button-primary {
+      .link-primary {
+        font-size: $font-size*1.5;
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .menu-main {
+    padding-top: $spacing-main;
+
+    .menu-section {
+      padding: 1rem;
+      width: 70%;
+
+      .title-primary {
+        font-size: 2rem;
+      }
+
+      .title-secondary {
+        font-size: 1.75rem;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+
+      .button-primary {
+        .link-primary {
+          font-size: $font-size*1.15;
+        }
+      }
+    }
   }
 }

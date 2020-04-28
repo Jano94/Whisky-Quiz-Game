@@ -10,7 +10,7 @@ const QuizOption = ({questions, options, selected, back}) => {
 
     const changeAnswerButton = (
        answer.length === 1
-           ? <button className="button-third" onClick={ handleBack }> Change your answer </button>
+           ? <button className="button-third" onClick={handleBack}> Change your answer </button>
            : null
     );
 

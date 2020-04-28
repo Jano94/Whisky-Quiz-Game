@@ -15,7 +15,6 @@ const App = () => {
     const [level, setLevel] = useState(0);
     return (
         <>
-            return <h1>{t('Welcome to React')}</h1>
         <HashRouter>
             <Switch>
         <Route exact={true} path ="/" component={LoadingPage}/>

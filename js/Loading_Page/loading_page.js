@@ -3,7 +3,6 @@ import MainMenu from "../Quiz-menu/quiz_welcome_menu";
 
 class LoadingPage extends Component {
     state = {
-        progress: 0,
         progressNum: 0
     };
 
@@ -12,41 +11,34 @@ class LoadingPage extends Component {
             this.setState(
                 prevState => {
                     return {
-                        progress: prevState.progress + 1,
-                        progressNum: prevState.progressNum +1
+                        progressNum: prevState.progressNum +2
                     };
                 },
                 () => {
-                    if (this.state.progress === 100 && this.state.progressNum === 100) {
+                    if ( this.state.progressNum === 100) {
                         clearInterval(this.intervalId);
                     }
                 }
             );
-        }, 40);
+        }, 50);
     }
     componentWillUnmount() {
         clearInterval(this.intervalId);
     }
     render() {
-        if (this.state.progress && this.state.progressNum === 100) return <MainMenu/>;
+        if ( this.state.progressNum === 100) return <MainMenu/>;
         return (
             <>
-
+                <div className="loading-background">
                 <div className="loading-menu">  </div>
-                    <div className="loading-section">
-                     {/*   <div className="progress">*/}
-                     {/*       <div className="progress-bar"*/}
-                     {/*           style={{*/}
-                     {/*            width: `${this.state.progress}%`*/}
-                     {/*        }}>*/}
-                     {/*       </div>*/}
-                     {/*</div>*/}
-                        <p className="progress-text"> Your whisky percentage has: {this.state.progressNum}%</p>
-                    </div>
+                <div className="loading-section"> </div>
+                    <p className="progress-text"> Your whisky percentage has: {this.state.progressNum}%</p>
+                </div>
+
 
 
             </>
         );
     }
 }
-export default LoadingPage;
+export default LoadingPage

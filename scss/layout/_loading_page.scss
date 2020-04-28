@@ -1,9 +1,30 @@
-.loading-menu {
+body {
+  background-image: url("./../images/whisky_background2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.loading-background {
+  background-color: rgba(245, 245, 245, 0.7);
+  border-radius: $border-radius;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 10rem;
+  flex-direction: column;
+}
+.loading-menu {
   width: 15rem;
   height: 15rem;
   background-image: url("./../images/knightsofbarley.png");
@@ -11,38 +32,33 @@
   background-size: cover;
 }
 .loading-section {
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-  & .progress {
-      display: flex;
-      justify-content: center;
-      width: 60%;
-      height: 1rem;
-
-
-    & .progress-bar {
-        background-color: $mexican-red;
-      }
-    }
-
-  & .progress-text {
-      font-size: $font-size;
-      color: $darken-blue;
-    font-family: $font-primary;
+  .progress {
+    height: 1.5rem;
+    .progress-bar {
+      background-color: $mexican-red;
     }
   }
+}
+.progress-text {
+    text-align: center;
+    font-size: $font-size*2;
+    color: $darken-blue;
+    font-family: $font-primary;
+  margin-top: $spacing-main*4;
+  }
+
 
 .text {
-    font-family: $font-primary;
+  font-family: $font-primary;
 
-  }
+}
 
 .text-color {
-    color: $white;
+  color: $white;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .progress-text {
+    margin-top: $spacing-main*2;
+    font-size: $font-size*1.75;
   }
-
+}

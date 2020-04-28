@@ -1,11 +1,4 @@
-.quiz-menu {
-  width: $width-page;
-  height: 100vh;
-  background-image: url("./../images/whisky_background2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  & .quiz-header {
-    width: $width-page;
+.quiz-header {
     height: 20%;
     padding: 8rem;
     display: flex;
@@ -21,9 +14,43 @@
       padding: 20px;
    }
   }
-  }
 .quiz-article {
   font-size: 1rem;
-  margin-bottom: 20px;
-
+}
+@media (min-width: 770px) and (max-width: 992px) {
+  .quiz-header {
+    padding: 6rem;
+    & .quiz-title {
+      font-size: 2.5rem;
+      padding: $spacing-main;
+    }
+  }
+}
+@media (min-width: 577px) and (max-width: 769px) {
+  .quiz-header {
+    padding: 5rem;
+    & .quiz-title {
+      font-size: 2.4rem;
+      padding: $spacing-main;
+    }
+  }
+  .quiz-article {
+    margin-top: $spacing-main*2;
+    padding:0;
+  }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .quiz-header {
+    padding: 5rem;
+    .quiz-title {
+      font-size: 2.25rem;
+      padding: $spacing-main;
+      text-align: center;
+    }
+  }
+  .quiz-article {
+    box-sizing: border-box;
+    margin-top: $spacing-main;
+    padding:0;
+  }
 }

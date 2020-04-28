@@ -5,8 +5,19 @@
   padding: 1.4rem;
   text-align: center;
   font-family: $font-primary;
-
 }
 .quiz-question {
   padding-top: 1rem;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .quiz-box {
+    .title-game{
+      font-size: $font-size*2;
+    }
+    .quiz-question {
+      .question {
+        font-size: $font-size*1.3;
+      }
+    }
+  }
 }
