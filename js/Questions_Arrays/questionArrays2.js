@@ -1,7 +1,7 @@
 const questArray2= [
     {
         question: "1. What is the angel share?",
-        answers: ["Drinking in bar with Angels" , "It`s not exits" , "The 2-4% of alcohol volume which is lose each year" , "Whisky label"],
+        answers: ["Bar in LA" , "It`s not exits" , "The 2-4% of alcohol volume which is lose each year" , "Whisky label"],
         correct: "The 2-4% of alcohol volume which is lose each year",
         questionID: 6
     },
@@ -25,8 +25,8 @@ const questArray2= [
     },
     {
         question: "5. And ... How you should drink whisky?",
-        answers: ["On the rocks" , "With drop of water" , "With coce or another soda" , "No one will tell me how to drink my whisky. I could drink as I like"],
-        correct: "No one will tell me how to drink my whisky. I could drink as I like",
+        answers: ["On the rocks" , "With drop of water" , "With coce or another soda" , "As I like"],
+        correct: "As I like",
         questionID: 10
     },
 ];

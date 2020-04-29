@@ -11,13 +11,17 @@
 }
 @media (min-width: 321px) and (max-width: 576px) {
   .quiz-box {
-    padding: 0.25rem;
+    padding: 0.1rem;
     .title-game{
-      font-size: $font-size*1.75;
+      font-size: $font-size*1.5;
     }
     .quiz-question {
       .question {
         font-size: $font-size*1.25;
+      }
+      .button-secondary {
+        font-size: $font-size;
+        padding: 0.1rem 0.1rem;
       }
     }
   }
@@ -26,10 +30,10 @@
   .quiz-box {
     padding: 0;
     .title-game{
-      font-size: $font-size;
+      display: none;
     }
     .quiz-question {
-      min-height: 160px;
+      min-height: 162px;
       .question {
         font-size: $font-size*0.9;
       }
