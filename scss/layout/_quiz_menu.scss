@@ -1,37 +1,55 @@
 .quiz-header {
-    height: 20%;
-    padding: 8rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  height: 20%;
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: $white;
+  .header-box {
+    text-align: center;
+    font-family: $font-primary;
+    background: $black;
+    border-radius: $border-radius;
     color: $white;
-    & .quiz-title {
-      font-family: $font-primary;
-     font-size: 3.2rem;
-      background: $black;;
-      border-radius: $border-radius;
-      color: $white;
-      padding: 20px;
-   }
+    padding: $spacing-main;
+    .quiz-title {
+      font-size: $font-size*3.2;
+    }
+    .quiz-info {
+      font-size: $font-size*2;
+      border-bottom: 1px solid $white;
+    }
   }
+}
 .quiz-article {
   font-size: 1rem;
 }
 @media (min-width: 770px) and (max-width: 992px) {
   .quiz-header {
     padding: 6rem;
-    & .quiz-title {
-      font-size: 2.5rem;
-      padding: $spacing-main;
+    .header-box {
+      .quiz-title {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: $spacing-main;
+      }
+      .quiz-info {
+        font-size: $font-size*1.7;
+      }
     }
   }
 }
 @media (min-width: 577px) and (max-width: 769px) {
   .quiz-header {
-    padding: 5rem;
-    & .quiz-title {
-      font-size: 2.4rem;
-      padding: $spacing-main;
+    padding: 4rem;
+    .header-box {
+      .quiz-title {
+        font-size: 2.2rem;
+        padding: $spacing-main;
+      }
+      .quiz-info {
+        font-size: $font-size*1.4;
+      }
     }
   }
   .quiz-article {
@@ -39,13 +57,37 @@
     padding:0;
   }
 }
-@media (min-width: 0px) and (max-width: 576px) {
+@media (min-width: 160px) and (max-width: 576px) {
   .quiz-header {
-    padding: 5rem;
-    .quiz-title {
-      font-size: 2.25rem;
-      padding: $spacing-main;
-      text-align: center;
+    padding: 4rem;
+    .header-box {
+      .quiz-title {
+        font-size: 2rem;
+        padding: $spacing-main;
+        text-align: center;
+      }
+      .quiz-info {
+        font-size: $font-size*1.2;
+      }
+    }
+  }
+  .quiz-article {
+    box-sizing: border-box;
+    margin-top: $spacing-main;
+    padding:0;
+  }
+}
+@media (min-width: 0px) and (max-width: 159px) {
+  .quiz-header {
+    padding: 1.5rem;
+    .header-box {
+      .quiz-title {
+        font-size: 1.2rem;
+        padding: $spacing-main*0.25;
+      }
+      .quiz-info {
+        font-size: $font-size;
+      }
     }
   }
   .quiz-article {

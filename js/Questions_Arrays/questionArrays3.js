@@ -1,7 +1,7 @@
 const questArray3 = [
     {
         question: "Who is the author of 'Whisky Bible'?",
-        answers: ["Jim Murray" , "David Wishart" , " Michael Jackson" , "Jarosław Urban"],
+        answers: ["Jim Murray" , "David Wishart" , "Michael Jackson" , "Jarosław Urban"],
         correct: "Jim Murray",
         questionID: 13
     },

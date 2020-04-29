@@ -24,7 +24,7 @@ const questArray2= [
         questionID: 9
     },
     {
-        question: "And ... How you should drink whisky?",
+        question: "5. And ... How you should drink whisky?",
         answers: ["On the rocks" , "With drop of water" , "With coce or another soda" , "No one will tell me how to drink my whisky. I could drink as I like"],
         correct: "No one will tell me how to drink my whisky. I could drink as I like",
         questionID: 10

@@ -47,7 +47,7 @@ class QuizGame extends Component {
         return (
             <>
                 <section className="menu-main">
-                    <div className="container quiz-box">
+                    <div className="quiz-box">
                 <h1 className="title-game"> {this.props.title}</h1>
                 {this.state.questionArray.length > 0 &&
                 this.state.responses < 5 &&
@@ -62,7 +62,8 @@ class QuizGame extends Component {
                     />))}
 
                 {this.state.responses === 5 ? (
-                    <QuizResult lvl={this.props.lvl} setLevel={this.props.setLevel} showButton={this.props.showButtonResult} showWinnerButton={this.props.showButtonWinner} playAgainFn={this.playAgain}
+                    <QuizResult lvl={this.props.lvl} setLevel={this.props.setLevel} showButton={this.props.showButtonResult}
+                                showWinnerButton={this.props.showButtonWinner} playAgainFn={this.playAgain}
                                 score={this.props.score} responses={this.state.responses}
                     />) : null}
             </div>

@@ -9,14 +9,53 @@
 .quiz-question {
   padding-top: 1rem;
 }
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 321px) and (max-width: 576px) {
   .quiz-box {
+    padding: 0.25rem;
     .title-game{
-      font-size: $font-size*2;
+      font-size: $font-size*1.75;
     }
     .quiz-question {
       .question {
-        font-size: $font-size*1.3;
+        font-size: $font-size*1.25;
+      }
+    }
+  }
+}
+@media (min-width: 200px) and (max-width: 320px) {
+  .quiz-box {
+    padding: 0;
+    .title-game{
+      font-size: $font-size;
+    }
+    .quiz-question {
+      min-height: 160px;
+      .question {
+        font-size: $font-size*0.9;
+      }
+      .button-secondary {
+        font-size: $font-size*0.85;
+        padding: 0.1rem 0.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 199px) {
+  .quiz-box {
+    margin-top: $spacing-main*2;
+    padding: 0.1rem;
+    .title-game{
+      display: none;
+    }
+    .quiz-question {
+      min-height: 177px;
+      .question {
+        font-size: $font-size*0.9;
+      }
+      .button-secondary {
+        font-size: $font-size*0.9;
+        padding: 0.1rem 0.1rem;
       }
     }
   }

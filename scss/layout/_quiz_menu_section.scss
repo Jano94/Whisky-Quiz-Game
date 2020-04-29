@@ -34,7 +34,7 @@
   }
   @media (min-width: 577px) and (max-width: 769px) {
     .columns-background {
-      height: 175px;
+      height: 150px;
       margin-left: $spacing-main*3;
       margin-right: $spacing-main*3;
     }
@@ -49,7 +49,7 @@
       }
     }
   }
-  @media (min-width: 0px) and (max-width: 576px) {
+  @media (min-width: 310px) and (max-width: 576px) {
     .columns-background {
       height: 150px;
       margin-left: $spacing-main*2.5;
@@ -70,4 +70,22 @@
       }
     }
   }
+@media (min-width: 0px) and (max-width: 309px) {
+  .columns-background {
+    height: 150px;
+    margin-left: $spacing-main;
+    margin-right: $spacing-main;
+  }
+  .columns-text {
+    font-size: 1.5rem;
+    padding: $spacing-main;
+
+  }
+  .button-primary {
+    padding: $spacing-main*0.25;
+    .link-primary {
+      font-size: 1rem;
+    }
+  }
+}
 
