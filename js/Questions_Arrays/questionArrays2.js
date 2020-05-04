@@ -13,7 +13,7 @@ const questArray2= [
     },
     {
         question: "3. Which region in Scotland is producing the most 'peaty' whisky?",
-        answers: ["Speyside" , "Highlands" , "Lowlands" , "Isla"],
+        answers: ["Speyside" , "Highlands" , "Lowlands" , "Islay"],
         correct: "Isla",
         questionID: 8
     },

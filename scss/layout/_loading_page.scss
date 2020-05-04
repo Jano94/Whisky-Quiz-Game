@@ -1,13 +1,9 @@
-body {
-  background-image: url("./../images/whisky_background2.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+.loading-section {
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
+  background-image: url("./../images/whisky_background2.jpg");
+  background-repeat: no-repeat;
+  background-size: center/cover;
 }
 .loading-background {
   background-color: rgba(245, 245, 245, 0.7);
@@ -31,7 +27,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.loading-section {
+.loading-article {
   .progress {
     height: 1.5rem;
     .progress-bar {

@@ -6,7 +6,7 @@ const questArray1= [
         questionID: 1
     },
     {
-        question: "2. What kind of grain is uses to make single malt whisky?",
+        question: "2. What kind of grain is used to make single malt whisky?",
         answers: ["Corn" , "Barley" , "Wheat" , "Rye"],
         correct: "Barley",
         questionID: 2
@@ -18,7 +18,7 @@ const questArray1= [
         questionID: 3
     },
     {
-        question: "4. How many ages, scotch whisky has to spend in barrels?",
+        question: "4. How many years, scotch whisky has to spend in barrels?",
         answers: ["Is good after production" , "Only year" , "Two years", "Three years"],
         correct: "Three years",
         questionID: 4

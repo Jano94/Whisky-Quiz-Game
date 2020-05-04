@@ -1,9 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import QuizMenuSection from "./quiz_menu_section";
 
 
-const QuizMenu = ({score, level, setLevel,}) => {
-    const text = "To unlock the next level, you have to achieve three points.";
+const QuizMenu = ({score, level, setLevel}) => {
+    const text = "To unlock the next level, you have to score three points.";
+
+
     return (
         <>
         <section className="quiz-menu">
@@ -23,12 +25,14 @@ const QuizMenu = ({score, level, setLevel,}) => {
                         <li className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 quiz-article">
                              <QuizMenuSection setLevel={setLevel} lvl={3} showButtonResult={false}
                                               score={score} name={"Intermediates"} url={'/quiz/game/2'}
-                                              isActive={score.length >= 3 &&  level > 1? true : false}/>
+                                              isActive={score.length >= 3 &&  level > 1? true : false}
+                                              />
                         </li>
                         <li className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 quiz-article">
                             <QuizMenuSection setLevel={setLevel} lvl={3} showButtonResult={false}
                                              score={score} name={"Kippers"} url={'/quiz/game/3'}
-                                         isActive={score.length >= 3 &&  level > 2 ? true : false}/>
+                                         isActive={score.length >= 3 &&  level > 2 ? true : false}
+                                            />
                         </li>
                 </ul>
             </div>

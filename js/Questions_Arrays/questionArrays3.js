@@ -6,7 +6,7 @@ const questArray3 = [
         questionID: 13
     },
     {
-        question: "Which place was taken by Poland in the ranking of whiskey bottles sold in the world in 2013?",
+        question: "Which place did Poland take in the ranking of whiskey bottles sold in the world in 2013?",
         answers: ["7" , "11" , "30" , "19"],
         correct: "11",
         questionID: 14

@@ -29,16 +29,15 @@ class LoadingPage extends Component {
         if ( this.state.progressNum === 100) return <MainMenu/>;
         return (
             <>
-                <div className="loading-background">
-                <div className="loading-menu">  </div>
-                <div className="loading-section"> </div>
+                <section className="loading-section">
+                    <div className="loading-background">
+                        <div className="loading-menu">  </div>
+                        <div className="loading-article"> </div>
                     <p className="progress-text"> Your whisky percentage has: {this.state.progressNum}%</p>
-                </div>
-
-
-
+                    </div>
+                </section>
             </>
         );
     }
 }
-export default LoadingPage
+export default LoadingPage;
