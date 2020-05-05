@@ -21,7 +21,7 @@
     }
   }
 
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 777px) and (max-width: 992px) {
   .button-primary {
       padding: $spacing-main*2;
       .link-primary {
@@ -32,31 +32,14 @@
       font-size: $font-size*2.2;
     }
   }
-  @media (min-width: 577px) and (max-width: 769px) {
+  @media (min-width: 310px) and (max-width: 776px) {
     .columns-background {
-      height: 150px;
+      height: 120px;
       margin-left: $spacing-main*3;
       margin-right: $spacing-main*3;
     }
     .columns-text {
-      font-size: 2rem;
-      padding: $spacing-main;
-    }
-    .button-primary {
-      padding: $spacing-main;
-      .link-primary {
-        font-size: 1rem;
-      }
-    }
-  }
-  @media (min-width: 310px) and (max-width: 576px) {
-    .columns-background {
-      height: 150px;
-      margin-left: $spacing-main*2.5;
-      margin-right: $spacing-main*2.5;
-    }
-    .columns-text {
-      font-size: 1.7rem;
+      font-size: $font-size*1.5;
       font-family: $font-primary;
       padding: $spacing-main;
       color: $white;

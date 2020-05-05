@@ -8,14 +8,14 @@ const QuizMenu = ({score, level, setLevel}) => {
 
     return (
         <>
-        <section className="quiz-menu">
+        <section className="menu-main">
             <header className="quiz-header">
              <div className="header-box">
                 <h1 className="quiz-title"> Choose your quiz: </h1>
                 <h5 className="quiz-info">{text}</h5>
              </div>
             </header>
-                <div className="container text-color">
+                <div className="text-color">
                     <ul className="row">
                         <li className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 quiz-article">
                             <QuizMenuSection setLevel={setLevel} lvl={2} showButtonResult={true}

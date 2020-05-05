@@ -1,59 +1,69 @@
-.quiz-menu {
+.menu-main {
   background-image: url("./../images/whisky_background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.quiz-header {
-  height: 20%;
-  padding: 8rem;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  color: $white;
-  .header-box {
-    text-align: center;
-    font-family: $font-primary;
-    background: $black;
-    border-radius: $border-radius;
+  flex-direction: column;
+  .quiz-header {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     color: $white;
-    padding: $spacing-main;
-    .quiz-title {
-      font-size: $font-size*3.2;
-    }
-    .quiz-info {
-      font-size: $font-size*2;
-      border-bottom: 1px solid $white;
+    .header-box {
+      text-align: center;
+      font-family: $font-primary;
+      background: $black;
+      border-radius: $border-radius;
+      color: $white;
+      padding: $spacing-main;
+      .quiz-title {
+        font-size: $font-size*3.2;
+      }
+
+      .quiz-info {
+        font-size: $font-size*2;
+        border-bottom: 1px solid $white;
+      }
     }
   }
 }
 .quiz-article {
   font-size: 1rem;
 }
-@media (min-width: 770px) and (max-width: 992px) {
-  .quiz-header {
-    padding: 6rem;
-    .header-box {
-      .quiz-title {
-        text-align: center;
-        font-size: 2.5rem;
-        padding: $spacing-main;
-      }
-      .quiz-info {
-        font-size: $font-size*1.7;
+@media (min-width: 769px) and (max-width: 992px) {
+  .menu-main {
+    .quiz-header {
+      padding: 6rem;
+
+      .header-box {
+        .quiz-title {
+          text-align: center;
+          font-size: 2.5rem;
+          padding: $spacing-main;
+        }
+
+        .quiz-info {
+          font-size: $font-size*1.7;
+        }
       }
     }
   }
 }
 @media (min-width: 577px) and (max-width: 769px) {
-  .quiz-header {
-    padding: 4rem;
-    .header-box {
-      .quiz-title {
-        font-size: 2.2rem;
-        padding: $spacing-main;
-      }
-      .quiz-info {
-        font-size: $font-size*1.4;
+  .menu-main {
+    .quiz-header {
+      padding: 0;
+
+      .header-box {
+        .quiz-title {
+          font-size: 2.2rem;
+          padding: $spacing-main;
+        }
+
+        .quiz-info {
+          font-size: $font-size*1.4;
+        }
       }
     }
   }
@@ -63,23 +73,25 @@
   }
 }
 @media (min-width: 160px) and (max-width: 576px) {
-  .quiz-header {
-    padding: 4rem;
-    .header-box {
-      .quiz-title {
-        font-size: 2rem;
-        padding: $spacing-main;
-        text-align: center;
-      }
-      .quiz-info {
-        font-size: $font-size*1.2;
+  .menu-main {
+    .quiz-header {
+      padding: $spacing-main;
+      .header-box {
+        .quiz-title {
+          font-size: $font-size*2;
+          padding: $spacing-main*0.5;
+          text-align: center;
+        }
+        .quiz-info {
+          font-size: $font-size*1.2;
+        }
       }
     }
   }
   .quiz-article {
     box-sizing: border-box;
     margin-top: $spacing-main;
-    padding:0;
+    padding:0  $spacing-main;
   }
 }
 @media (min-width: 0px) and (max-width: 159px) {
