@@ -1,6 +1,6 @@
 # Whisky-Quiz-Game
 
-Checkout your knowledge your whisky knowledge in my first quiz game.
+Check out your knowledge your whisky knowledge in my first quiz game.
 
 ## Description 
 
