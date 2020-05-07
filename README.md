@@ -1,6 +1,6 @@
 # Whisky-Quiz-Game
 
-Let check out your whisky knowledge in my first quiz game made with React and Sass. 
+Checkout your knowledge your whisky knowledge in my first quiz game.
 
 ## Description 
 
